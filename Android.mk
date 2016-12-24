@@ -841,10 +841,6 @@ LOCAL_SDCLANG_LTO := true
 LOCAL_FDO_SUPPORT := true
 
 
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-        LOCAL_WHOLE_STATIC_LIBRARIES += libqc-skia
-endif
-
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
 	$(LOCAL_PATH)/include/codec \
 	$(LOCAL_PATH)/include/android \
